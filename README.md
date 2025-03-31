@@ -1,83 +1,57 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/IWjcQDMP)
 
-# Lab 5 and 6 - CRUD Operations API
+Customer Management System - User Interface
 
-## 1. Requirement of new CUSTOMER_NAME table
+## 1. Homepage
 
-I added an [Entity](https://github.com/PRAKASH-K-A/lab5-and-lab-6-pranavgnn/blob/main/src/main/java/com/mit/entity/CustomerName.java) class and a [Repository](https://github.com/PRAKASH-K-A/lab5-and-lab-6-pranavgnn/blob/main/src/main/java/com/mit/repository/CustomerNameRepository.java) class for CUSTOMER_NAME.
+The homepage serves as the entry point to the application, providing navigation options to view all customers or create a new customer. It features a clean and modern design with a focus on usability.
 
-I then did `@OneToOne` mapping between CUSTOMER_DETAILS and CUSTOMER_NAME tables.
+![Screenshot (8)](https://github.com/user-attachments/assets/24fc76a5-1eb9-43bf-af8e-58aacf57b8b7)
 
----
-## 2. Test
+## 2. Customer List View
 
-My dummy JSON data used for testing:
+The customer list view displays all registered customers in a card-based layout. Each card shows the customer's name, ID, and date of birth. A "Back to Home" button allows users to return to the homepage.
 
-```json
-{
-  "customerName": {
-    "firstName": "John",
-    "middleName": "Michael",
-    "lastName": "Doe"
-  },
-  "dateOfBirth": "1990-05-15",
-  "customerContactInformations": [
-    {
-      "type": "Email",
-      "value": "johndoe@example.com"
-    },
-    {
-      "type": "Phone",
-      "value": "+1234567890"
-    }
-  ],
-  "customerIdentifications": [
-    {
-      "type": 1,
-      "item": "Passport"
-    },
-    {
-      "type": 2,
-      "item": "Driver's License"
-    }
-  ],
-  "customerProofOfIds": [
-    {
-      "type": "Aadhar Card",
-      "value": "1234-5678-9012",
-      "startDate": "2015-08-01",
-      "endDate": "2035-08-01"
-    },
-    {
-      "type": "PAN Card",
-      "value": "ABCDE1234F",
-      "startDate": "2010-04-10",
-      "endDate": "2030-04-10"
-    }
-  ]
-}
-```
+![Screenshot (18)](https://github.com/user-attachments/assets/369c2b9a-6ac0-4e10-8dd9-78913a82570f)
 
-1. POST Request
+## 3. Customer Creation Form
 
-![image](https://github.com/user-attachments/assets/6cfa85f0-084a-41fe-9772-b1915f1bcf1f)
+The customer creation process is implemented as a multi-step form, ensuring a smooth and organized data entry experience.
 
-3. GET Request (all records)
+### Step 1: Personal Details
 
-![image](https://github.com/user-attachments/assets/179f3bd9-5834-4288-b6e1-4f3bbd756298)
+The first step collects the customer's personal details, including name, date of birth, gender, and preferred language.
 
-5. GET Request (by id)
+![Screenshot (9)](https://github.com/user-attachments/assets/80216295-e31c-4d30-877a-3c8b63f7f7a2)
 
-![image](https://github.com/user-attachments/assets/bf2bae82-d2bd-4ae4-87da-34f8ec85ba66)
+### Step 2: Address Information
 
-7. PUT Request
+The second step captures the customer's address, including street, city, state, country, and postal code.
 
-![image](https://github.com/user-attachments/assets/7f5fe886-4492-4523-a40a-0cb1d74d4a07)
+![Screenshot (11)](https://github.com/user-attachments/assets/331f7f2d-81e9-4410-a0cc-f6e4cd710103)
 
-9. DELETE Request
+### Step 3: Identity Proofs
 
-![image](https://github.com/user-attachments/assets/b8de913a-2183-465e-b328-ceb69925e4cd)
+The third step collects identity proof details, such as ID type, number, issue date, and expiry date. Users can add multiple identity proofs.
 
-11. GET Request (all records) to verify DELETE
+![Screenshot (12)](https://github.com/user-attachments/assets/ecaf81b7-e437-444f-917c-4dff510a73fa)
 
-![image](https://github.com/user-attachments/assets/bf69d94a-de3c-4a51-8ed4-a92edd4a68ef)
+## 4. Customer Summary View
+
+Before submission, users can review all entered information in the summary view. This ensures data accuracy and provides an option to go back and edit any section.
+
+![Screenshot (15)](https://github.com/user-attachments/assets/58f48eb9-6522-4584-8b15-e9307708d405)
+![Screenshot (16)](https://github.com/user-attachments/assets/92b1bcf1-343a-4238-8c8a-a7663a9166f3)
+
+## 5. Submission Confirmation
+
+After successfully submitting the customer data, a confirmation screen is displayed. It includes the customer's name and ID, along with options to view customer details or add another customer.
+
+![Screenshot (17)](https://github.com/user-attachments/assets/e5d2490c-a167-486a-9651-0b330b744b70)
+
+## 6. Customer Details View
+
+The customer details view provides a comprehensive overview of a specific customer's information, including personal details, address, contact details, and identity proofs.
+
+![Screenshot (19)](https://github.com/user-attachments/assets/cf1545e4-203e-4365-95cc-66e522c7e107)
+
