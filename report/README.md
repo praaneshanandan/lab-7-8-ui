@@ -51,4 +51,4 @@ After successfully submitting the customer data, a confirmation screen is displa
 
 The customer details view provides a comprehensive overview of a specific customer's information, including personal details, address, contact details, and identity proofs.
 
-![Screenshot 2025-03-31 at 19-55-12 Vite React TS](https://github.com/user-attachments/assets/cf1545e4-203e-4365-95cc-66e522c7e107)
+![Screenshot (19)](https://github.com/user-attachments/assets/cf1545e4-203e-4365-95cc-66e522c7e107)
