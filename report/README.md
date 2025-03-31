@@ -1,4 +1,4 @@
-![Screenshot 2025-03-31 at 19-55-12 Vite React TS](https://github.com/user-attachments/assets/5f4a0b1d-aa30-4442-8a1d-80d74c4a2e08)# Customer Management System - User Interface Walkthrough
+Customer Management System - User Interface Walkthrough
 
 This document provides a detailed walkthrough of the application's user interface, showcasing its features and functionality.
 
